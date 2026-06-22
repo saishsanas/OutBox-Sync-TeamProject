@@ -1,0 +1,167 @@
+2026-04-12 18:25:40 [INFO] com.moinmankar.outboxsync.Application - Starting Application using Java 23.0.1 with PID 20012 (C:\springProjects\outboxsync\target\classes started by Moin in C:\springProjects\outboxsync)
+2026-04-12 18:25:40 [INFO] com.moinmankar.outboxsync.Application - No active profile set, falling back to 1 default profile: "default"
+2026-04-12 18:25:41 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-12 18:25:41 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2026-04-12 18:25:41 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-12 18:25:41 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-12 18:25:41 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-12 18:25:41 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-12 18:25:41 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+2026-04-12 18:25:41 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-12 18:25:41 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-12 18:25:41 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-12 18:25:42 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-12 18:25:42 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-12 18:25:42 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@315b5913
+2026-04-12 18:25:42 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-12 18:25:42 [INFO] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-12 18:25:43 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-12 18:25:43 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12 18:25:43 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12 18:25:43 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-12 18:25:43 [INFO] com.moinmankar.outboxsync.Application - Started Application in 3.303 seconds (process running for 3.584)
+2026-04-12 18:25:43 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:25:43 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:25:43 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:25:43 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:25:48 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:25:48 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:25:48 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:25:48 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:25:53 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:25:53 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:25:53 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:25:53 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:25:58 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:25:58 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:25:58 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:25:58 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:03 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:03 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:03 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:03 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:08 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:08 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:08 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:08 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:13 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:13 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:13 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:13 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:18 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:18 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:18 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:18 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:23 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:23 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:23 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:23 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:26:28 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:26:28 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:26:28 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:26:28 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:27:58 [INFO] com.moinmankar.outboxsync.Application - Starting Application using Java 23.0.1 with PID 12932 (C:\springProjects\outboxsync\target\classes started by Moin in C:\springProjects\outboxsync)
+2026-04-12 18:27:58 [INFO] com.moinmankar.outboxsync.Application - No active profile set, falling back to 1 default profile: "default"
+2026-04-12 18:27:58 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-12 18:27:58 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2026-04-12 18:27:59 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-12 18:27:59 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-12 18:27:59 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-12 18:27:59 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-12 18:27:59 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 828 ms
+2026-04-12 18:27:59 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-12 18:27:59 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-12 18:27:59 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-12 18:27:59 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-12 18:27:59 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-12 18:27:59 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50bf795f
+2026-04-12 18:27:59 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-12 18:27:59 [INFO] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-12 18:28:00 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-12 18:28:00 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12 18:28:00 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12 18:28:01 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-12 18:28:01 [INFO] com.moinmankar.outboxsync.Application - Started Application in 3.193 seconds (process running for 3.478)
+2026-04-12 18:28:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:01 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:06 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:11 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:11 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:11 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:11 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:16 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:16 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:16 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:16 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:21 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:21 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:21 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:21 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:26 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:26 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:26 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:26 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 18:28:31 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 18:28:31 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 18:28:31 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 18:28:31 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 19:02:52 [INFO] com.moinmankar.outboxsync.Application - Starting Application using Java 23.0.1 with PID 20680 (C:\springProjects\outboxsync\target\classes started by Moin in C:\springProjects\outboxsync)
+2026-04-12 19:02:52 [INFO] com.moinmankar.outboxsync.Application - No active profile set, falling back to 1 default profile: "default"
+2026-04-12 19:02:53 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-12 19:02:53 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2026-04-12 19:02:53 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-12 19:02:53 [INFO] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-12 19:02:53 [INFO] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-12 19:02:53 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-12 19:02:53 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
+2026-04-12 19:02:54 [INFO] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-12 19:02:54 [INFO] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-12 19:02:54 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-12 19:02:54 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-12 19:02:54 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-12 19:02:54 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c4cceb
+2026-04-12 19:02:54 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-12 19:02:54 [INFO] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-12 19:02:55 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-12 19:02:55 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12 19:02:56 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12 19:02:56 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-12 19:02:56 [INFO] com.moinmankar.outboxsync.Application - Started Application in 4.118 seconds (process running for 4.493)
+2026-04-12 19:02:56 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 19:02:56 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 19:02:56 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 19:02:56 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 19:03:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 19:03:01 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 19:03:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 19:03:01 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
+2026-04-12 19:03:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER START] ==========
+2026-04-12 19:03:06 [DEBUG] org.hibernate.SQL - select oe1_0.id,oe1_0.created_at,oe1_0.event_type,oe1_0.last_attempted_at,oe1_0.payload,oe1_0.retry_count,oe1_0.status from outbox_event oe1_0 where oe1_0.status=?
+2026-04-12 19:03:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - [WORKER] Fetched 0 pending events
+2026-04-12 19:03:06 [INFO] com.moinmankar.outboxsync.service.OutboxWorker - ========== [WORKER END] ==========
